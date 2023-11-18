@@ -30,10 +30,10 @@ body {
 
 .question-container {
   background-color: #541DCB;
-  width: 794px;
-  height: 176px;
-  border-radius: 56px;
-  padding: 24px 0px 24px 0px;
+  width: 608px;
+  height: 144px;
+  border-radius: 48px;
+  padding: 16px 0px 24px 0px;
   box-sizing: border-box;
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.25);
   margin-bottom: 64px;
@@ -47,27 +47,27 @@ body {
 
 .question-number {
   font-size: 48px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .question-text {
-  font-size: 32px;
+  font-size: 28px;
   font-family: 'Ubuntu';
   line-height: 32px;
 }
 
 
 .answer-container {
-  width: 794px;
-  height: 560px;
+  width: 664px;
+  height: 448px;
   display: grid;
-  column-gap: 64px;
-  grid-template-columns: 364px 364px;
+  column-gap: 34px;
+  grid-template-columns: 300px 300px;
 }
 
 .answer-0, .answer-1, .answer-2, .answer-3 {
-  width: 364px;
-  height: 192px;
+  width: 300px;
+  height: 160px;
   border-radius: 16px;
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.25);
   
@@ -75,7 +75,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-size: 48px;
+  font-size: 36px;
   cursor: pointer;
 }
 
@@ -90,4 +90,12 @@ body {
 }
 .answer-3 {
   background-color: #E53C3C;
+}
+
+.next-img {
+  height: 64px;
+  position: relative;
+  top: 400px;
+  right: -32px;
+  cursor: pointer;
 }
