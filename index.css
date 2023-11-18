@@ -65,7 +65,7 @@ body {
   grid-template-columns: 364px 364px;
 }
 
-.answer-1, .answer-2, .answer-3, .answer-4 {
+.answer-0, .answer-1, .answer-2, .answer-3 {
   width: 364px;
   height: 192px;
   border-radius: 16px;
@@ -79,6 +79,9 @@ body {
   cursor: pointer;
 }
 
+.answer-0 {
+  background-color: #FBD038;
+}
 .answer-1 {
   background-color: #3FB634;
 }
@@ -87,7 +90,4 @@ body {
 }
 .answer-3 {
   background-color: #E53C3C;
-}
-.answer-4 {
-  background-color: #FBD038;
 }
