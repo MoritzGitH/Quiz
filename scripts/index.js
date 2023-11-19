@@ -1,5 +1,7 @@
-import {quiz} from '/scripts/next.js'
+import {quiz, onNext} from './next.js'
+import { choseAnswer } from './select.js'
 
+export { questions }
 
 let questions = [
   { 
@@ -10,7 +12,8 @@ let questions = [
     {a: 'Abraham Lincoln', i: 1, correct: false},
     {a: 'Christoph Columbus', i: 2, correct: false},
     {a: 'James Washington', i: 3, correct: false},
-    ] 
+    ],
+    correctAnswer: 'George Washington war der 1. Präsident' 
   },
   { 
     number: 2,
@@ -20,7 +23,8 @@ let questions = [
     {a: 'Nebreska', i: 1, correct: true},
     {a: 'Alaska', i: 2, correct: false},
     {a: 'Vermont', i: 3, correct: false},
-    ] 
+    ],
+    correctAnswer: 'Die Antwort ist Nebreska' 
   },
 ]
 
@@ -30,12 +34,22 @@ export function renderQuiz (quiz) {
   let html = ''
   questions[quiz].answers.forEach((o, i) => {
     
-    
-    html = html + `<div class="answer-${i}">${o.a}</div>`
+    html = html + `<div class="answer-${i} js-answer" data-id="${quiz}">${o.a}</div>`
     
   })
+
+  html += `<div class="js-submit-container"></div>
+  <div><img src="images/Polygon 1.png" class="next-img js-next "></div>
+`
+
+
+
+
   document.querySelector('.js-answer-container').innerHTML = html; 
 
   document.querySelector('.js-question-text').innerHTML = questions[quiz].question
   document.querySelector('.js-question-number').innerHTML = `Quiz Frage ${questions[quiz].number}:`
 }
+
+choseAnswer()
+onNext()

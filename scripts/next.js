@@ -1,12 +1,14 @@
 import { renderQuiz } from "./index.js";
+import { choseAnswer } from "./select.js";
 
-export {quiz}
+export {quiz, onNext}
 
 let quiz = 0;
 
-
+function onNext () {
 document.querySelector('.js-next').addEventListener('click', ()=> {
   quiz ++;
-  console.log(quiz)
   renderQuiz (quiz)
+  choseAnswer ()
 })
+}

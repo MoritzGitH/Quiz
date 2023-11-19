@@ -58,11 +58,11 @@ body {
 
 
 .answer-container {
-  width: 664px;
   height: 448px;
   display: grid;
-  column-gap: 34px;
+  column-gap: 40px;
   grid-template-columns: 300px 300px;
+  row-gap: 40px;
 }
 
 .answer-0, .answer-1, .answer-2, .answer-3 {
@@ -95,7 +95,32 @@ body {
 .next-img {
   height: 64px;
   position: relative;
-  top: 400px;
-  right: -32px;
+  top: 0px;
+  right: -230px;
   cursor: pointer;
+}
+
+.submit-button {
+  background-color: #39ce2c;
+  width: 300px;
+  height: 64px;
+  border-radius: 16px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu';
+  font-size: 32px;
+
+  cursor: pointer;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+.opacity-60 {
+  opacity: 60%;
+}
+
+.opacity-0{
+  opacity: 0;
 }
