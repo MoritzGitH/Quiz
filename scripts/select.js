@@ -1,6 +1,8 @@
 import { questions } from "./index.js"
-
+export { length, correct}
 let submited
+let correct = 0
+let length = 0
 
 export function choseAnswer () {
   submited = false
@@ -49,10 +51,17 @@ function submitAnswer (outcome, i) {
 
  if (outcome) {
   document.querySelector('.js-question-number').innerHTML = 'Richtig!'
-  
+  correct++;
+
  } else {
   document.querySelector('.js-question-number').innerHTML = 'Vielleicht nächstes Mal.'
  }
 
  document.querySelector('.js-question-text').innerHTML = questions[i].correctAnswer
+}
+
+export function calculateResult () {
+  questions.forEach((e,i) => {
+    length ++;
+})
 }

@@ -63,6 +63,7 @@ body {
   column-gap: 40px;
   grid-template-columns: 300px 300px;
   row-gap: 40px;
+  color: rgb(13, 13, 13);
 }
 
 .answer-0, .answer-1, .answer-2, .answer-3 {

@@ -1,5 +1,5 @@
 import {quiz, onNext} from './next.js'
-import { choseAnswer } from './select.js'
+import { calculateResult, choseAnswer } from './select.js'
 
 export { questions }
 
@@ -42,9 +42,6 @@ export function renderQuiz (quiz) {
   <div><img src="images/Polygon 1.png" class="next-img js-next "></div>
 `
 
-
-
-
   document.querySelector('.js-answer-container').innerHTML = html; 
 
   document.querySelector('.js-question-text').innerHTML = questions[quiz].question
@@ -53,3 +50,4 @@ export function renderQuiz (quiz) {
 
 choseAnswer()
 onNext()
+calculateResult()
