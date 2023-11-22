@@ -21,21 +21,78 @@
   <div class="position-container">
 
     <div class="text-box js-text-box">Wie soll dein Quiz heißen?</div>
-    <div class="input-box">
+    <div class="input-box" id="input-box">
       <input class="input js-input" type="text" placeholder="z.B. Master Quiz">
     </div>
    
-    <div class="line-decoration"></div>
+    <div class="line-decoration" id="line-decoration"></div>
 
     <div class="button-container">
     <div class="submit-button js-submit-button">Weiter</div>
     <div class="save-button js-save-button">Beenden</div>
   </div>
 
-  <div><img src="/images/Polygon 1.png"  class="back-img js-backwards"></div>
+  <ul>
+    <div hidden="true" id="list-1">
+    <li class="list-1">
+      <div class="list-left" id="name-text">Name</div>
+      <img class="edit-img" id="name-img" src="/images/edit.png">
+      <input class="edit-input" id="name-input" type="text" placeholder="editieren" hidden="true">
+    </li>
+    </div>
+
+    <div hidden="true" id="list-2">
+    <li id="list-2">
+      <div class="list-left" id="question-text">Frage</div>
+      <img class="edit-img" id="question-img" src="/images/edit.png">
+      <input class="edit-input" id="question-input" type="text" placeholder="editieren" hidden="true">
+    </li>
+    </div>
+
+    <div hidden="true" id="list-3">
+    <li>
+      <div class="list-left" id="answer-text">Antwort Satz</div>
+      <img class="edit-img" id="answer-img" src="/images/edit.png">
+      <input class="edit-input" id="answer-input" type="text" placeholder="editieren" hidden="true">
+    </li>
+    </div>
+
+    <div hidden="true" id="list-4">
+    <li>
+      <div class="list-left" id="answer-1-text">Antwort 1</div>
+      <img class="edit-img" id="answer-1-img" src="/images/edit.png">
+      <input class="edit-input" id="answer-1-input" type="text" placeholder="editieren" hidden="true">
+    </li>
+    </div>
+
+    <div hidden="true" id="list-5">
+    <li>
+      <div class="list-left" id="answer-2-text">Antwort 2</div>
+      <img class="edit-img" id="answer-2-img" src="/images/edit.png">
+      <input class="edit-input" id="answer-2-input" type="text" placeholder="editieren" hidden="true">
+    </li>
+    </div>
+
+    <div hidden="true" id="list-6">
+    <li>
+      <div class="list-left" id="answer-3-text">Antwort 3</div>
+      <img class="edit-img" id="answer-3-img" src="/images/edit.png">
+      <input class="edit-input" id="answer-3-input" type="text" placeholder="editieren" hidden="true">
+    </li>
+    </div>
+
+    <div hidden="true" id="list-7">
+    <li>
+      <div class="list-left" id="answer-4-text">Antwort 4</div>
+      <img class="edit-img" id="answer-4-img" src="/images/edit.png">
+      <input class="edit-input" id="answer-4-input" type="text" placeholder="editieren" hidden="true">
+    </li>
+    </div>
+  </ul>
 
   </div>
 
   <script type="module" src="index.js"></script>
+  <script type="module" src="edit.js"></script>
 </body>
 </html>

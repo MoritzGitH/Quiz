@@ -1,5 +1,5 @@
 *{
-  font-family: 'Caveat Brush';
+  font-family: 'Ubuntu';
   cursor: default;
   user-select: none;
 }
@@ -123,3 +123,42 @@ body {
 .display-flex {
   display: flex;
 }
+
+.display-none {
+  display: none;
+}
+ul li {
+  list-style: none;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  padding: 0px;
+  display: grid;
+  gap: 10px;
+}
+
+.edit-img {
+  width: 32px;
+  cursor: pointer;
+}
+
+.edit-input::placeholder {
+  font-family: 'Ubuntu';
+}
+
+.edit-input {
+  font-family: 'Ubuntu';
+  border: dashed 0.5px;
+  background-color: #F0F0F0;
+  padding: 4px 4px 4px 6px;
+  border-radius: 4px;
+};
+
+#list-1 {
+  
+}
+
