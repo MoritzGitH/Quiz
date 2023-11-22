@@ -1,6 +1,7 @@
 *{
   font-family: 'Caveat Brush';
   cursor: default;
+  user-select: none;
 }
 
 body {
